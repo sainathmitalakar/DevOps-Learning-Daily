@@ -171,3 +171,58 @@ nslookup &lt;hostname&gt;
 </details>
 
 ---
+<details>
+<summary><b>7. How do you handle a full memory (RAM) situation causing application crashes?</b></summary>
+
+### Steps:
+<ul>
+<li>Check current memory usage with <code>free -m</code> or <code>vmstat</code>.</li>
+<li>Identify memory-hungry processes using <code>top</code> or <code>htop</code>.</li>
+<li>Consider restarting or tuning the configuration of memory-intensive services.</li>
+<li>Check for memory leaks in custom applications or scripts.</li>
+<li>Enable or adjust swap space to prevent immediate crashes.</li>
+<li>Plan for scaling or optimizing applications to reduce memory footprint.</li>
+</ul>
+
+### Commands used in this scenario:
+
+<pre>
+free -m
+vmstat 5
+top
+htop
+ps aux --sort=-%mem | head -n 10
+swapon -s
+sudo swapoff -a && sudo swapon -a
+</pre>
+
+</details>
+
+---
+
+<details>
+<summary><b>8. How do you safely update packages and the Linux kernel in production?</b></summary>
+
+### Steps:
+<ul>
+<li>Check current system version and kernel version.</li>
+<li>Update package repositories before upgrading.</li>
+<li>Review changelogs for critical services or dependencies.</li>
+<li>Apply updates in a staged manner (test server first if possible).</li>
+<li>Reboot only if required by kernel updates and ensure service availability.</li>
+<li>Verify the system and services after updates to confirm stability.</li>
+</ul>
+
+### Commands used in this scenario:
+
+<pre>
+uname -r
+cat /etc/os-release
+sudo apt update && sudo apt upgrade -y       # For Debian/Ubuntu
+sudo yum check-update && sudo yum update -y  # For RHEL/CentOS
+sudo reboot                                  # Only if kernel updated
+systemctl status &lt;service-name&gt;
+</pre>
+
+</details>
+
