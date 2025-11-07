@@ -1,35 +1,81 @@
-# DevOps-Learning-Daily
-A community-driven DevOps learning repository structured for daily practice, real-time scenarios, and tool mastery.
+<p align="center">
+  <a href="https://sainathmitalakar.github.io/DevOps-Learning-Daily">
+    <img alt="DevOps Learning Daily" src="./assets/devops-logo.png" width="80" />
+  </a>
+</p>
+<h1 align="center">
+  DevOps Learning Daily
+</h1>
 
-# 🚀 DevOps Learning Repository
+<p align="center">
+<a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/blob/main/LICENSE" target="blank">
+<img src="https://img.shields.io/github/license/sainathmitalakar/DevOps-Learning-Daily?style=flat-square" alt="license" />
+</a>
+<a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/fork" target="blank">
+<img src="https://img.shields.io/github/forks/sainathmitalakar/DevOps-Learning-Daily?style=flat-square" alt="forks"/>
+</a>
+<a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/sainathmitalakar/DevOps-Learning-Daily?style=flat-square" alt="stars"/>
+</a>
+<a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/issues" target="blank">
+<img src="https://img.shields.io/github/issues/sainathmitalakar/DevOps-Learning-Daily?style=flat-square" alt="issues"/>
+</a>
+<a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/sainathmitalakar/DevOps-Learning-Daily?style=flat-square" alt="pull-requests"/>
+</a>
+</p>
 
-Welcome to the **DevOps-Learning** repo — your all-in-one daily practice guide for mastering DevOps from fundamentals to advanced real-world scenarios.
+<p align="center"><img src="./assets/demo.gif" alt="DevOps Learning Demo" /></p>
+
+<p align="center">
+    <a href="https://sainathmitalakar.github.io/DevOps-Learning-Daily" target="blank">📘 View Learning Portal</a>
+    ·
+    <a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/issues/new/choose">🐛 Report Bug</a>
+    ·
+    <a href="https://github.com/sainathmitalakar/DevOps-Learning-Daily/issues/new/choose">🚀 Request Topic</a>
+</p>
 
 ---
 
-## 📘 Structure
-Each folder focuses on a DevOps technology with:
-- ✅ Commands and concepts  
-- 🧩 Real-world troubleshooting scenarios  
-- 📸 Visual explanations (screenshots / diagrams)  
-- 🧠 Interview-level Q&A  
+## 📚 About the Project
+
+**DevOps Learning Daily** is an open learning repository built for DevOps engineers who love to practice daily.  
+Each folder (Linux, Docker, Kubernetes, Jenkins, Terraform, etc.) contains a single `README.md` file with:
+- 📸 Visual notes & architecture diagrams  
+- 💻 Commands & hands-on examples  
+- 🧠 Real-time troubleshooting & interview scenarios  
+- 🧩 Daily updates and contributions  
+
+> Goal: One repo, all DevOps tools — simplified, visual, and practical.
 
 ---
 
-## 📅 Daily Plan
-| Day | Topic | Focus Area |
-|-----|--------|-------------|
-| 1 | Linux | File System, Permissions, Networking |
-| 2 | Git | Branching, Merge Conflicts, Rebase |
-| 3 | Docker | Image Optimization, Multi-stage builds |
-| 4 | Kubernetes | Pods, Deployments, Services |
-| 5 | Jenkins | CI/CD Pipelines |
-| 6 | Terraform | IaC & Cloud Provisioning |
-| 7 | Ansible | Configuration Management |
-| 8 | Monitoring | Prometheus, Grafana, Loki |
-| 9 | Scripting | Bash, PowerShell, Python Automation |
+## 🧰 Tech Stack
+- Markdown + GitHub Pages  
+- Static Docs structure  
+- Visual learning with diagrams & snippets  
 
 ---
+
+## 🧠 Topics Covered
+- Linux Administration  
+- Git & GitHub  
+- Docker & Containerization  
+- Kubernetes (EKS, Helm, ArgoCD)  
+- Jenkins CI/CD  
+- Terraform & IaC  
+- AWS Fundamentals  
+- Monitoring (Grafana, Prometheus, Loki)  
+- DevSecOps Concepts  
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sainathmitalakar/DevOps-Learning-Daily.git
+
 
 ## 🤝 Contributing
 1. Fork this repo (or clone if private).  
