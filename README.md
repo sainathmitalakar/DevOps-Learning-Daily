@@ -48,3 +48,9 @@ Think of it as a *daily DevOps gym* 🧑‍💻🏋️‍♂️
 Created by **Sainath Mitalakar**  
 ✨ *“Automate. Observe. Secure. Repeat.”*
 
+## 🌟 Star History
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sainathmitalakar/DevOps-Learning-Daily&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sainathmitalakar/DevOps-Learning-Daily&type=Date" />
+  <img alt="DevOps-Learning-Daily Star History Chart" src="https://api.star-history.com/svg?repos=sainathmitalakar/DevOps-Learning-Daily&type=Date" />
+</picture>
