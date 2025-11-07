@@ -68,13 +68,106 @@ cat /var/log/&lt;relevant-log-file&gt;
 
 ---
 
-### ✅ How to Add Daily Scenarios
 
-- Copy one `<details>` block for each new scenario.  
-- Replace the question, steps, and commands.  
-- Commit changes — GitHub renders it **as an interactive collapsible tutorial page** automatically.
+<details>
+<summary><b>3. How do you check why a Linux service failed to start?</b></summary>
+
+### Steps:
+<ul>
+<li>Check the service status using <code>systemctl status</code>.</li>
+<li>Review journal logs for errors: <code>journalctl -xe</code>.</li>
+<li>Look for missing dependencies or misconfigurations.</li>
+<li>Try starting the service manually and observe any errors.</li>
+<li>Verify file permissions and ownership if the service accesses files.</li>
+</ul>
+
+### Commands used in this scenario:
+
+<pre>
+systemctl status &lt;service-name&gt;
+journalctl -xe
+systemctl start &lt;service-name&gt;
+ls -l /path/to/service/files
+</pre>
+
+</details>
+
+---
+<details>
+<summary><b>4. How do you find and kill a runaway process consuming high CPU?</b></summary>
+
+### Steps:
+<ul>
+<li>Use <code>top</code> or <code>htop</code> to identify processes consuming high CPU.</li>
+<li>Note the process ID (PID).</li>
+<li>Kill the process gracefully with <code>kill PID</code>.</li>
+<li>If it doesn’t stop, force kill with <code>kill -9 PID</code>.</li>
+<li>Check logs to understand why the process spiked.</li>
+</ul>
+
+### Commands used in this scenario:
+
+<pre>
+top
+htop
+ps -aux --sort=-%cpu | head -n 10
+kill &lt;PID&gt;
+kill -9 &lt;PID&gt;
+cat /var/log/&lt;application-log&gt;
+</pre>
+
+</details>
 
 ---
 
-This structure will make your Linux README **look like a web page**, interactive and clean.  
-Each new question you add will appear in the same style, ready for friends or colleagues to read and learn from.  
+<details>
+<summary><b>5. How do you monitor disk usage and prevent full disk issues in production?</b></summary>
+
+### Steps:
+<ul>
+<li>Check disk usage with <code>df -h</code>.</li>
+<li>Analyze directory size with <code>du -sh /path/*</code>.</li>
+<li>Set up alerts for disk usage thresholds.</li>
+<li>Clean old logs and temporary files regularly.</li>
+<li>Consider moving large data to separate partitions or external storage.</li>
+</ul>
+
+### Commands used in this scenario:
+
+<pre>
+df -h
+du -sh /path/*
+find /var/log -type f -name "*.log" -mtime +30 -exec rm -f {} \;
+ncdu / (optional interactive disk analyzer)
+</pre>
+
+</details>
+
+---
+
+<details>
+<summary><b>6. How do you check network connectivity issues on a Linux server?</b></summary>
+
+### Steps:
+<ul>
+<li>Ping the remote host to verify connectivity.</li>
+<li>Check routing tables and network interfaces.</li>
+<li>Inspect firewall rules for blocked traffic.</li>
+<li>Use <code>traceroute</code> to identify network hops and latency.</li>
+<li>Check DNS resolution if hostname cannot be reached.</li>
+</ul>
+
+### Commands used in this scenario:
+
+<pre>
+ping &lt;host&gt;
+ip addr
+ip route
+iptables -L -n
+traceroute &lt;host&gt;
+nslookup &lt;hostname&gt;
+</pre>
+
+</details>
+
+---
