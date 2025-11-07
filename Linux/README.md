@@ -92,19 +92,5 @@ docker stats
 
 ---
 
-### ✅ How to Add Daily Scenarios
 
-- Copy one `<details>` block for each new scenario.  
-- Replace the question, steps, and commands.  
-- Commit changes — GitHub renders it **as an interactive collapsible tutorial page** automatically.
 
----
-
-This gives you a **clean webpage-like UI** for all your Linux DevOps scenarios.  
-When you commit, all collapsible sections, code blocks, and lists render **beautifully** on GitHub.  
-
----
-
-If you want, I can **convert your entire Linux README with all current scenarios into this webpage style**, so it’s ready to go for daily updates.  
-
-Do you want me to do that?
