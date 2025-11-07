@@ -24,17 +24,24 @@ cat /var/log/messages
 ps -ef | grep defunct
 systemctl restart <service-name>
 uptime
-  
 
+  **2. A deployment script failed because of a “Permission Denied” error — how do you handle it?**
 
-# 2. A deployment script failed because of a “Permission Denied” error — how do you handle it?
+- Check which user is running the script.  
+- Verify file and directory permissions to ensure the user has proper access.  
+- Make sure the script has execute permission if it’s a shell script.  
+- Use `sudo` if the script requires admin privileges for restricted directories.  
+- Inspect the script for hardcoded paths or commands that require elevated access.  
+- Re-run the script after changes and verify logs to confirm the issue is fixed.  
 
-First, I check which user is running the script using whoami.
-Then, I verify the file and directory permissions with ls -l to see if the user has the correct access rights.
-If it’s a shell script, I ensure it has execute permission using chmod +x script.sh.
-Sometimes the error comes from restricted directories like /etc or /var/log, so I may need to use sudo for admin privileges.
-I also check the script for hardcoded paths or restricted commands.
-Once fixed, I re-run it and confirm with logs that the issue is resolved.
+**Commands used in this scenario:**
+
+```bash
+whoami
+ls -l
+chmod +x script.sh
+sudo ./script.sh
+cat /var/log/<relevant-log-file>
 
 
 
