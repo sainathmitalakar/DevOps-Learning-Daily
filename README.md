@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://sainathmitalakar.github.io/DevOps-Learning-Daily">
-    <img alt="DevOps Learning Daily" src="./assets/devops-logo.png" width="80" />
+    <img alt="DevOps Learning Daily" src="./assets/devops-logo.png" width="80" /> 
   </a>
 </p>
 <h1 align="center">
