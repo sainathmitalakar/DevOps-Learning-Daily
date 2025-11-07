@@ -68,29 +68,13 @@ cat /var/log/&lt;relevant-log-file&gt;
 
 ---
 
-<details>
-<summary><b>3. How do you check running Docker containers on a Linux server?</b></summary>
+### ✅ How to Add Daily Scenarios
 
-### Steps:
-<ul>
-<li>List all running containers.</li>
-<li>Inspect logs if a container is not behaving.</li>
-<li>Restart or stop containers as needed.</li>
-<li>Monitor resource usage per container.</li>
-</ul>
-
-### Commands used:
-
-<pre>
-docker ps
-docker logs &lt;container-id&gt;
-docker restart &lt;container-id&gt;
-docker stats
-</pre>
-
-</details>
+- Copy one `<details>` block for each new scenario.  
+- Replace the question, steps, and commands.  
+- Commit changes — GitHub renders it **as an interactive collapsible tutorial page** automatically.
 
 ---
 
-
-
+This structure will make your Linux README **look like a web page**, interactive and clean.  
+Each new question you add will appear in the same style, ready for friends or colleagues to read and learn from.  
