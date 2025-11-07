@@ -24,6 +24,7 @@ cat /var/log/messages
 ps -ef | grep defunct
 systemctl restart <service-name>
 uptime
+```bash
 
   **2. A deployment script failed because of a “Permission Denied” error — how do you handle it?**
 
@@ -42,6 +43,7 @@ ls -l
 chmod +x script.sh
 sudo ./script.sh
 cat /var/log/<relevant-log-file>
+
 
 
 
