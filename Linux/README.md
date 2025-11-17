@@ -225,4 +225,18 @@ systemctl status &lt;service-name&gt;
 </pre>
 
 </details>
+<details>
+<summary><strong>7. How do you check which process is using high CPU or memory in Linux?</strong></summary>
+
+Use the <code>top</code> or <code>htop</code> command to identify the processes consuming the most system resources.
+
+**Command:**
+<pre><code>top
+htop    # if installed
+</code></pre>
+
+**Real Scenario:**  
+System is slow? Run <code>top</code> and check if any process is hitting 90–100% CPU or memory.
+</details>
+
 
