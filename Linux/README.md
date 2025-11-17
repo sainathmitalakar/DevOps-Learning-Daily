@@ -223,6 +223,7 @@ sudo yum check-update && sudo yum update -y  # For RHEL/CentOS
 sudo reboot                                  # Only if kernel updated
 systemctl status &lt;service-name&gt;
 </pre>
+---
 
 </details>
 <details>
@@ -238,5 +239,6 @@ htop    # if installed
 **Real Scenario:**  
 System is slow? Run <code>top</code> and check if any process is hitting 90–100% CPU or memory.
 </details>
+
 
 
