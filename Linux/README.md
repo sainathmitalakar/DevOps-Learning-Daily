@@ -245,5 +245,20 @@ System is slow? Run <code>top</code> and check if any process is hitting 90–10
 
 ----------
 
+<details>
+<summary><strong>8. How do you find which service is running on a specific port?</strong></summary>
+
+Use the <code>lsof</code> or <code>netstat</code> command to identify the service bound to a port.
+
+**Command:**
+<pre><code>sudo lsof -i :8080
+sudo netstat -tulnp | grep 8080
+</code></pre>
+
+**Real Scenario:**  
+If your app fails to start because the port is already in use, run these to find which service is blocking the port.
+</details>
+
+-------------
 
 
