@@ -225,7 +225,10 @@ systemctl status &lt;service-name&gt;
 </pre>
 
 </details>
+
 --------
+
+
 <details>
 <summary><strong>7. How do you check which process is using high CPU or memory in Linux?</strong></summary>
 
@@ -241,5 +244,6 @@ System is slow? Run <code>top</code> and check if any process is hitting 90–10
 </details>
 
 ----------
+
 
 
